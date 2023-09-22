@@ -1,0 +1,68 @@
+.footer {
+    background: #333;
+    color: #FFF;
+    padding: 2.5rem 2.25rem;
+}
+
+.content {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 8.375rem;
+}
+
+.nav {
+    display: flex;
+    gap: 5rem;
+    margin-right: 10.95rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.link {
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    margin-right: 6.025rem;
+}
+
+.contact {
+    color: #FF6B00;
+    text-decoration: underline;
+}
+
+.text {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.telegram {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.button {
+    align-self: flex-end;
+    border-radius: 8px;
+    background: #FF6B00;
+    height: 2.25rem;
+    display: inline-flex;
+    padding: .75rem 1.0rem;
+    justify-content: center;
+    align-items: center;
+}

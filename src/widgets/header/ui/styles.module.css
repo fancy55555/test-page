@@ -1,0 +1,33 @@
+.header {
+    padding: 1.25rem 2.1875rem;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6.5625rem;
+
+    background: #FFF;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+
+    gap: 1.25rem;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+
+    padding: .75rem;
+
+    gap: .25rem;
+
+    border-radius: 2.5rem;
+    background: #F2F2F2;
+}
+
+.string {
+    font-size: .875rem;
+}

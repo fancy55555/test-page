@@ -1,0 +1,23 @@
+.incidents {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1.0rem 2.0rem;
+}
+
+.row {
+    display: flex;
+    gap: 1.0rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

@@ -1,0 +1,51 @@
+.tape {
+    padding: 2.0rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    background: #FFFFFF;
+
+    border-radius: .75rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.icon {
+    margin-top: .25rem;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.content {
+    color: #262626;
+    font-weight: 400;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.time {
+    color: #838383;
+    font-size: .875rem;
+    font-weight: 400;
+}

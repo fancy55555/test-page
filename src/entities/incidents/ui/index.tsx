@@ -1,38 +1,25 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import Image from 'next/image'
 
 import styles from './styles.module.css'
 
-import Heading from '@/shared/ui/heading'
-import Topic from '@/shared/ui/topic/ui'
+import { IItem } from '@/entities/articles/ui'
 
+import Heading from '@/shared/ui/heading'
 import Cell from '@/entities/cell/ui'
 
-export interface IItem {
-    id: number
-    date: string
-    time: string
-    content: string
-    topic?: string
-    comments: Array<any>
-    favourites: Array<any>
-    reactions: Array<IReaction>
-}
-
-interface IReaction {
-    id: number
+interface IIncident extends IItem {
     src: string
-    quantity: number
 }
 
-const Article = () => {
-    const data: Array<IItem> = [
+const Incidents = () => {
+    const data: Array<IIncident> = [
         {
             id: 0,
+            src: '/images/raster/test-0.jpg',
             date: '1.01.2023',
             time: '13:53',
-            topic: 'Политика',
             content: 'Синоптик спрогнозировал срок наступления бабьего лета',
             comments: [{}, {}, {}, {}, {}],
             favourites: [{}, {}, {}, {}, {}],
@@ -56,9 +43,9 @@ const Article = () => {
         },
         {
             id: 1,
+            src: '/images/raster/test-1.jpg',
             date: '1.01.2023',
             time: '13:53',
-            topic: 'Политика',
             content: 'Синоптик спрогнозировал срок наступления бабьего лета',
             comments: [{}, {}, {}, {}, {}],
             favourites: [{}, {}, {}, {}, {}],
@@ -82,9 +69,9 @@ const Article = () => {
         },
         {
             id: 2,
+            src: '/images/raster/test-2.jpg',
             date: '1.01.2023',
             time: '13:53',
-            topic: 'Политика',
             content: 'Синоптик спрогнозировал срок наступления бабьего лета',
             comments: [{}, {}, {}, {}, {}],
             favourites: [{}, {}, {}, {}, {}],
@@ -108,9 +95,9 @@ const Article = () => {
         },
         {
             id: 3,
+            src: '/images/raster/test-3.jpg',
             date: '1.01.2023',
             time: '13:53',
-            topic: 'Политика',
             content: 'Синоптик спрогнозировал срок наступления бабьего лета',
             comments: [{}, {}, {}, {}, {}],
             favourites: [{}, {}, {}, {}, {}],
@@ -135,15 +122,16 @@ const Article = () => {
     ]
 
     return (
-        <div className={styles.articles}>
+        <div className={styles.incidents}>
             <div className={styles.top}>
-                <Heading priority={2} content='Читайте также' />
+                <Heading priority={2} content='Происшествия' />
                 <Image src='/images/vector/arrows.svg' alt='' width={25} height={25} />
             </div>
             <div className={styles.row}>
                 {data.map((item) => {
                     return (
-                        <div key={item.id} className={styles.item}>
+                        <div key={item.id} className={styles.container}>
+                            <Image src={item.src} alt='' width={265} height={165} />
                             <Cell item={item} />
                         </div>
                     )
@@ -153,4 +141,4 @@ const Article = () => {
     )
 }
 
-export default Article
+export default Incidents

@@ -1,0 +1,27 @@
+.navbar {
+    width: min(100%, 320px);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+
+    gap: .75rem;
+
+    padding: .75rem 1.25rem;
+
+    transition: 150ms all ease-in-out;
+
+    border-radius: 12px;
+
+    font-size: 1.125rem;
+}
+
+.item:hover {
+    background: #262626;
+    color: #FFFFFF;
+}
+
+.item:hover img {
+    filter: invert(82%) sepia(98%) saturate(5856%) hue-rotate(350deg) brightness(91%) contrast(92%);
+}
